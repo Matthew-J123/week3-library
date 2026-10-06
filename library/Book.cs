@@ -4,18 +4,28 @@ using System.Text;
 
 namespace library
 {
-    public class Book
+    class Book
     {
-        public string Title;
-        public string Author;
-        public string ISBN;
+        string Title;
+        string Author;
+        string ISBN;
 
-        public void DisplayInfo()
+        //Example of a constructor that allows us to 'construct' a new Book object
+        public Book(string booktitle, string bookauthor, string bookisbn)
         {
-            Console.WriteLine($"BookTitle: {Title}");
-            Console.WriteLine($"Book Author: {Author}");
-            Console.WriteLine($"BookISBN: {ISBN}");
+            this.Title = booktitle;
+            this.Author = bookauthor;
+            this.ISBN = bookisbn;
+        }
+
+        void DisplayInfo()
+        {
+            Console.WriteLine("Book Title: {Title}");
+            Console.WriteLine("Book Author: {Author}");
+            Console.WriteLine("Book ISBN: {ISBN}");
             Console.WriteLine();
         }
     }
+
 }
+
