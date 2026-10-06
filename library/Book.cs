@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace library
+﻿namespace library
 {
     class Book
     {
@@ -11,14 +7,14 @@ namespace library
         string ISBN;
 
         //Example of a constructor that allows us to 'construct' a new Book object
-        public Book(string booktitle, string bookauthor, string bookisbn)
+        public Book(string bookTitle, string bookAuthor, string bookISBN)
         {
-            this.Title = booktitle;
-            this.Author = bookauthor;
-            this.ISBN = bookisbn;
+            this.Title = bookTitle;
+            this.Author = bookAuthor;
+            this.ISBN = bookISBN;
         }
 
-        void DisplayInfo()
+        public void DisplayInfo()
         {
             Console.WriteLine("Book Title: {Title}");
             Console.WriteLine("Book Author: {Author}");
